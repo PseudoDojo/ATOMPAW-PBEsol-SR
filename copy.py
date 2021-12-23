@@ -92,10 +92,11 @@ elements = ['Ag',
 'Zn',
 'Zr']
 
+#for ii in np.arange(100):
+#  os.system('mkdir '+str(elements[ii]))
+#  os.system('mv '+str(elements[ii])+'.*  '+str(elements[ii])+'/')
+
 for ii in np.arange(100):
-  os.system('mkdir '+str(elements[ii]))
-  os.system('mv '+str(elements[ii])+'.*  '+str(elements[ii])+'/')
-
-
+  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA_X_PBE_SOL+GGA_C_PBE_SOL-paw.xml '+str(elements[ii])+'.GGA-PBESOL-paw.xml && cd ../')
 
 
