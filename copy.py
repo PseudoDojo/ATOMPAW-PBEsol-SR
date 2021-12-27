@@ -98,7 +98,7 @@ elements = ['Ag',
 
 for ii in np.arange(100):
 #  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA_X_PBE_SOL+GGA_C_PBE_SOL-paw.xml '+str(elements[ii])+'.GGA-PBESOL-paw.xml && cd ../')
-  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA-PBESOL-paw.xml '+str(elements[ii])+'.GGA-PBESOL-JTH.xml && cd ../')
-  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA-PBESOL-paw.UPF '+str(elements[ii])+'.GGA-PBESOL-JTH.UPF && cd ../')
+  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA-PBESOL-JTH.xml '+str(elements[ii])+'_std.xml && cd ../')
+  os.system('cd '+str(elements[ii])+'/ && git mv '+str(elements[ii])+'.GGA-PBESOL-JTH.UPF '+str(elements[ii])+'_std.upf && cd ../')
 
 
